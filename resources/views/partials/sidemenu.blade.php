@@ -14,7 +14,7 @@
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
-      <li class="active treeview">
+      <li class="treeview">
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Prediksi Togel</span>
           <span class="pull-right-container">
@@ -34,18 +34,21 @@
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="fa fa-files-o"></i>
-          <span>Layout Options</span>
+            <i class="fa fa-dashboard"></i> <span>Hasil Togel</span>
           <span class="pull-right-container">
-            <span class="label label-primary pull-right">4</span>
+            <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-          <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-          <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-          <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-        </ul>
+            <li><a href="/hasil-hongkong-dashboard"><i class="fa fa-circle-o"></i>Hongkong Pools</a></li>
+            <li><a href="/hasil-jakarta-dashboard"><i class="fa fa-circle-o"></i> Jakarta Pools</a></li>
+            <li><a href="/hasil-jowo-dashboard"><i class="fa fa-circle-o"></i> Jowo Pools</a></li>
+            <li><a href="/hasil-sgpmorning-dashboard"><i class="fa fa-circle-o"></i> SGP Morning Pools</a></li>
+            <li><a href="/hasil-sihanouk-dashboard"><i class="fa fa-circle-o"></i> Sihanouk Pools</a></li>
+            <li><a href="/hasil-singapore-dashboard"><i class="fa fa-circle-o"></i> Singapore Pools</a></li>
+            <li><a href="/hasil-sydney-dashboard"><i class="fa fa-circle-o"></i> Sydney Pools</a></li>
+            <li><a href="/hasil-toto-macau-dashboard"><i class="fa fa-circle-o"></i> Toto Macau Pools</a></li>
+          </ul>
       </li>
     </ul>
   </section>

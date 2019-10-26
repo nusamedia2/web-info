@@ -34,7 +34,7 @@
 					</ul>
 				</li>
                 <li><a href="/cara-deposit-dan-withdraw">Cara Deposit & Withdraw</a></li>
-                <li><a href="#">Hasil</a></li>
+                <li><a href="/hasil">Hasil</a></li>
                 <li><a href="/refferal">Referral</a></li>
                 <li><a href="#">Buku Mimpi</a></li>
                 <li><a href="#">Promo</a></li>

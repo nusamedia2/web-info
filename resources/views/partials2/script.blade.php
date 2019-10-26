@@ -6,4 +6,16 @@
 
 	<script src="plugin-frameworks/bootstrap.js"></script>
 
-	<script src="common/scripts.js"></script>
+    <script src="common/scripts.js"></script>
+
+    <select name="formal" onchange="javascript:handleSelect(this)">
+        <option value="home">Home</option>
+        <option value="contact">Contact</option>
+        </select>
+
+        <script type="text/javascript">
+        function handleSelect(elm)
+        {
+        window.location = elm.value+".php";
+        }
+        </script>

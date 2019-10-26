@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarSihanouk;
+use App\HasilSihanouk;
 
 class SihanoukController extends Controller
 {
@@ -107,5 +108,45 @@ class SihanoukController extends Controller
     {
         $gambar_sihanouks = GambarSihanouk::paginate(5);
         return view('prediksi.sihanouk', compact('gambar_sihanouks'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_sihanouks = HasilSihanouk::paginate(10);
+        return view('admin-hasil.sihanoukdashboard', compact('hasil_sihanouks'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.sihanouk');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilSihanouk::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-sihanouk-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_sihanouks = HasilSihanouk::find($id);
+        $hasil_sihanouks->delete();
+
+        return redirect('/hasil-sihanouk-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_sihanouks = HasilSihanouk::paginate(10);
+        return view('hasil.hasilsihanouk', compact('hasil_sihanouks'));
     }
 }

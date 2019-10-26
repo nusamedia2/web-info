@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarJowo;
+use App\HasilJowo;
 
 class JowoController extends Controller
 {
@@ -107,5 +108,45 @@ class JowoController extends Controller
     {
         $gambar_jowos = GambarJowo::paginate(5);
         return view('prediksi.jowo', compact('gambar_jowos'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_jowos = HasilJowo::paginate(10);
+        return view('admin-hasil.jowodashboard', compact('hasil_jowos'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.jowo');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilJowo::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-jowo-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_jowos = HasilJowo::find($id);
+        $hasil_jowos->delete();
+
+        return redirect('/hasil-jowo-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_jowos = HasilJowo::paginate(10);
+        return view('hasil.hasiljowo', compact('hasil_jowos'));
     }
 }

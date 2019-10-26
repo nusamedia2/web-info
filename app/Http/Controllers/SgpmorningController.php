@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarSgpmorning;
+use App\HasilSgpmorning;
 
 class SgpmorningController extends Controller
 {
@@ -107,5 +108,45 @@ class SgpmorningController extends Controller
     {
         $gambar_sgpmornings = GambarSgpmorning::paginate(5);
         return view('prediksi.sgpmorning', compact('gambar_sgpmornings'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_sgpmornings = HasilSgpmorning::paginate(10);
+        return view('admin-hasil.sgpmorningdashboard', compact('hasil_sgpmornings'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.sgpmorning');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilSgpmorning::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-sgpmorning-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_sgpmornings = HasilSgpmorning::find($id);
+        $hasil_sgpmornings->delete();
+
+        return redirect('/hasil-sgpmorning-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_sgpmornings = HasilSgpmorning::paginate(10);
+        return view('hasil.hasilsgpmorning', compact('hasil_sgpmornings'));
     }
 }

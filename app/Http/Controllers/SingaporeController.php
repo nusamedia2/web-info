@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarSingapore;
+use App\HasilSingapore;
 
 class SingaporeController extends Controller
 {
@@ -107,5 +108,45 @@ class SingaporeController extends Controller
     {
         $gambar_singapores = GambarSingapore::paginate(5);
         return view('prediksi.singapore', compact('gambar_singapores'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_singapores = HasilSingapore::paginate(10);
+        return view('admin-hasil.singaporedashboard', compact('hasil_singapores'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.singapore');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilSingapore::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-singapore-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_singapores = HasilSingapore::find($id);
+        $hasil_singapores->delete();
+
+        return redirect('/hasil-singapore-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_singapores = HasilSingapore::paginate(10);
+        return view('hasil.hasilsingapore', compact('hasil_singapores'));
     }
 }

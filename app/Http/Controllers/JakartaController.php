@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarJakarta;
+use App\HasilJakarta;
 class JakartaController extends Controller
 {
     /**
@@ -106,5 +107,45 @@ class JakartaController extends Controller
     {
         $gambar_jakartas = GambarJakarta::paginate(5);
         return view('prediksi.jakarta', compact('gambar_jakartas'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_jakartas = HasilJakarta::paginate(10);
+        return view('admin-hasil.jakartadashboard', compact('hasil_jakartas'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.jakarta');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilJakarta::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-jakarta-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_jakartas = HasilJakarta::find($id);
+        $hasil_jakartas->delete();
+
+        return redirect('/hasil-jakarta-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_jakartas = HasilJakarta::paginate(10);
+        return view('hasil.hasiljakarta', compact('hasil_jakartas'));
     }
 }

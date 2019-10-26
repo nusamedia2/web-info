@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarTotoMacau;
+use App\HasilTotoMacau;
 
 class TotoMacauController extends Controller
 {
@@ -107,5 +108,45 @@ class TotoMacauController extends Controller
     {
         $gambar_toto_macaus = GambarTotoMacau::paginate(5);
         return view('prediksi.toto-macau', compact('gambar_toto_macaus'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_toto_macaus = HasilTotoMacau::paginate(10);
+        return view('admin-hasil.toto-macaudashboard', compact('hasil_toto_macaus'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.toto-macau');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilTotoMacau::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-toto-macau-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_toto_macaus = HasilTotoMacau::find($id);
+        $hasil_toto_macaus->delete();
+
+        return redirect('/hasil-toto-macau-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_toto_macaus = HasilTotoMacau::paginate(10);
+        return view('hasil.hasiltotomacau', compact('hasil_toto_macaus'));
     }
 }

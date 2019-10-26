@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\GambarSydney;
+use App\HasilSydney;
 
 class SydneyController extends Controller
 {
@@ -107,5 +108,45 @@ class SydneyController extends Controller
     {
         $gambar_sydneys = GambarSydney::paginate(5);
         return view('prediksi.sydney', compact('gambar_sydneys'));
+    }
+
+    public function indexhasiladmin()
+    {
+        $hasil_sydneys = HasilSydney::paginate(10);
+        return view('admin-hasil.sydneydashboard', compact('hasil_sydneys'));
+    }
+
+    public function create2()
+    {
+        return view('admin-hasil.sydney');
+    }
+
+    public function store2(Request $request)
+    {
+        $this->validate($request, [
+            'hari' => 'required',
+            'tanggal' => 'required',
+            'nomor' => 'required',
+        ]);
+        HasilSydney::create([
+            'hari' => $request->hari,
+            'tanggal' => $request->tanggal,
+            'nomor' => $request->nomor
+        ]);
+        return redirect('/hasil-sydney-dashboard');
+    }
+
+    public function destroy2($id)
+    {
+        $hasil_sydneys = HasilSydney::find($id);
+        $hasil_sydneys->delete();
+
+        return redirect('/hasil-sydney-dashboard');
+    }
+
+    public function indexhasil()
+    {
+        $hasil_sydeys = HasilSydney::paginate(10);
+        return view('hasil.hasilsydney', compact('hasil_sydeys'));
     }
 }
