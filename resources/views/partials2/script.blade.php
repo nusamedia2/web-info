@@ -8,14 +8,20 @@
 
     <script src="common/scripts.js"></script>
 
-    <select name="formal" onchange="javascript:handleSelect(this)">
-        <option value="home">Home</option>
-        <option value="contact">Contact</option>
-        </select>
-
         <script type="text/javascript">
         function handleSelect(elm)
         {
         window.location = elm.value+".php";
         }
         </script>
+
+<script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>

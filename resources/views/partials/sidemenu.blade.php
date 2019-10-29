@@ -16,7 +16,7 @@
       <li class="header">MAIN NAVIGATION</li>
       <li class="treeview">
         <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Prediksi Togel</span>
+          <i class="fa fa-eye" aria-hidden="true"></i> <span>Prediksi Togel</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
@@ -34,7 +34,7 @@
       </li>
       <li class="treeview">
         <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Hasil Togel</span>
+            <i class="fa fa-usd" aria-hidden="true"></i> <span>Hasil Togel</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
@@ -49,6 +49,11 @@
             <li><a href="/hasil-sydney-dashboard"><i class="fa fa-circle-o"></i> Sydney Pools</a></li>
             <li><a href="/hasil-toto-macau-dashboard"><i class="fa fa-circle-o"></i> Toto Macau Pools</a></li>
           </ul>
+      </li>
+      <li>
+        <a href="/buku-mimpi-dashboard">
+            <i class="fa fa-book" aria-hidden="true"></i> <span>Buku Mimpi</span>
+        </a>
       </li>
     </ul>
   </section>

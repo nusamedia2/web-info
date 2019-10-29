@@ -1967,6 +1967,34 @@ aside{
 }
 .center {
     margin: auto;
-    width: 65%;
+    width: 62%;
   }
+hr{
+    border: 1px solid;
+}
+
+.tbody {
+    height: 50px !important;
+    overflow-y: scroll;
+  }
+
+  .my-tbody {
+    height:500px;
+    display:block;
+    overflow-y:scroll;
+    width:100%;
+  }
+
+  tbody {
+    width: 100%;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  td {
+    width: 33.33%;
+  }
+
 

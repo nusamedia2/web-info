@@ -45,6 +45,9 @@ Route::get('/prediksi', function () {
     return view('prediksi');
 });
 
+Route::get('/buka-kunci', function(){
+    return view('bukakunci');
+});
 //prediksi togel
 Route::get('/hongkong-dashboard', 'HongkongController@index');
 Route::get('/hongkong-add', 'HongkongController@create');
@@ -142,3 +145,10 @@ Route::get('/hasil-toto-macau-dashboard', 'TotoMacauController@indexhasiladmin')
 Route::get('/hasil-toto-macau-add', 'TotomacauController@create2');
 Route::post('/totomacau2/store', 'TotoMacauController@store2');
 Route::get('/deletedatahasiltotomacau/{id}', 'TotoMacauController@destroy2');
+
+//Buku Mimpi
+Route::get('/buku-mimpi-dashboard', 'BukuMimpiController@index');
+Route::get('/buku-mimpi-add', 'BukuMimpiController@create');
+Route::post('/bukumimpi/store', 'BukuMimpiController@store');
+Route::get('/deletedatabukumimpi/{id}', 'BukuMimpiController@destroy');
+Route::get('/buku-mimpi', 'BukuMimpiController@index2');

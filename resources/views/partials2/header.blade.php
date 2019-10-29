@@ -36,20 +36,30 @@
                 <li><a href="/cara-deposit-dan-withdraw">Cara Deposit & Withdraw</a></li>
                 <li><a href="/hasil">Hasil</a></li>
                 <li><a href="/refferal">Referral</a></li>
-                <li><a href="#">Buku Mimpi</a></li>
+                <li><a href="/buku-mimpi">Buku Mimpi</a></li>
                 <li><a href="#">Promo</a></li>
-                <li><a href="#">VIP</a></li>
-				<li><a href="/prediksi">Prediksi Togel</a></li>
-                <li class="drop-down"><a href="06_contact-us.html">Panduan<i class="ion-arrow-down-b"></i></a>
+                <li><a href="/prediksi">Prediksi Togel</a></li>
+                <li class="drop-down"><a href="#">Sosial Media<i class="ion-arrow-down-b"></i></a>
+                    <ul class="drop-down-menu drop-down-inner">
+                        <li><a href="#"><i class="ion-arrow-down-b">Facebook</i></a>
+                        <ul class="drop-down-menu drop-down-inner">
+                            <li><a href="#">Fanspage</a></li>
+                            <li><a href="#">Group</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true">Twitter</i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true">Whatsapp</i></a></li>
+                    </ul>
+                </li>
+                <li class="drop-down"><a href="#">Panduan<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
                         <li><a href="#">Tampilan Bet Live Number</a></li>
                         <li><a href="#">Panduan Bermain</a></li>
-                        <li><a href="#">Hitungan Togel</a></li>
-                        <li><a href="#">Dewa Togel New Design</a></li>
                         <li><a href="#">Mobile Version</a></li>
                         <li><a href="/lupa-password">Lupa Password</a></li>
-                        <li><a href="#">Buka Kunci</a></li>
-                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="/buka-kunci">Buka Kunci</a></li>
+                    </ul>
                 </li>
 			</ul>
         </div><!-- container -->

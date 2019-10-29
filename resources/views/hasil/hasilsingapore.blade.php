@@ -10,8 +10,9 @@
                     <option value="/hasil-hongkong">Hongkong Pools</option>
                     <option value="/hasil-jakarta">Jakarta Pools</option>
                     <option value="/hasil-jowo">Jowo Pools</option>
+                    <option value="/hasil-sgpmorning">Sgp Morning Pools</option>
                     <option value="/hasil-sihanouk">Sihanouk Pools</option>
-                    <option value="/hasil-singapore">Singapore Pools</option>
+                    <option value="/hasil-singapore" selected>Singapore Pools</option>
                     <option value="/hasil-sydney">Sydney Pools</option>
                     <option value="/hasil-totomacau">Toto Macau Pools</option>
                 </select>
