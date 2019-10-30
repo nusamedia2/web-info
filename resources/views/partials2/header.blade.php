@@ -41,12 +41,7 @@
                 <li><a href="/prediksi">Prediksi Togel</a></li>
                 <li class="drop-down"><a href="#">Sosial Media<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
-                        <li><a href="#"><i class="ion-arrow-down-b">Facebook</i></a>
-                        <ul class="drop-down-menu drop-down-inner">
-                            <li><a href="#">Fanspage</a></li>
-                            <li><a href="#">Group</a></li>
-                        </ul>
-                        </li>
+                        <li class="btn-group dropright"><a href="#"><i class="ion-arrow-right-b">Facebook</i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true">Twitter</i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a></li>
                         <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true">Whatsapp</i></a></li>
@@ -54,9 +49,9 @@
                 </li>
                 <li class="drop-down"><a href="#">Panduan<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
-                        <li><a href="#">Tampilan Bet Live Number</a></li>
+                        <li><a href="/tampilan-bet">Tampilan Bet Live Number</a></li>
                         <li><a href="#">Panduan Bermain</a></li>
-                        <li><a href="#">Mobile Version</a></li>
+                        <li><a href="/tampilan-awal">Mobile Version</a></li>
                         <li><a href="/lupa-password">Lupa Password</a></li>
                         <li><a href="/buka-kunci">Buka Kunci</a></li>
                     </ul>

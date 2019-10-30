@@ -48,6 +48,7 @@ Route::get('/prediksi', function () {
 Route::get('/buka-kunci', function(){
     return view('bukakunci');
 });
+
 //prediksi togel
 Route::get('/hongkong-dashboard', 'HongkongController@index');
 Route::get('/hongkong-add', 'HongkongController@create');
@@ -152,3 +153,32 @@ Route::get('/buku-mimpi-add', 'BukuMimpiController@create');
 Route::post('/bukumimpi/store', 'BukuMimpiController@store');
 Route::get('/deletedatabukumimpi/{id}', 'BukuMimpiController@destroy');
 Route::get('/buku-mimpi', 'BukuMimpiController@index2');
+
+//mobile version
+Route::get('/tampilan-awal', function(){
+    return view('mobileversion.tampilanawal');
+});
+Route::get('/cara-betting', function(){
+    return view('mobileversion.carabetting');
+});
+Route::get('/deposit', function(){
+    return view('mobileversion.deposit');
+});
+Route::get('/withdraw', function(){
+    return view('mobileversion.withdraw');
+});
+Route::get('/lupa-password2', function(){
+    return view('mobileversion.lupapassword');
+});
+Route::get('/memo', function(){
+    return view('mobileversion.memo');
+});
+Route::get('/transaksi', function(){
+    return view('mobileversion.transaksi');
+});
+Route::get('/live-chat', function(){
+    return view('mobileversion.livechat');
+});
+Route::get('/tampilan-bet', function(){
+    return view('tampilanbet');
+});

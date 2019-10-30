@@ -1961,14 +1961,16 @@ section{ padding: 50px 0; }
 	.plr-xs-90{ padding-left: 90px!important; padding-right: 90px!important; }
 
 }
-aside{
-    float: right;
-    position: relative;
-}
+
 .center {
     margin: auto;
     width: 62%;
   }
+.center2{
+    margin: auto;
+    width: 70%;
+    margin-left: 20%;
+}
 hr{
     border: 1px solid;
 }
@@ -1995,6 +1997,19 @@ hr{
 
   td {
     width: 33.33%;
+  }
+  .black{
+      background-color: #000;
+      color: #000;
+  }
+  .bca{
+      width: 120%;
+  }
+  .white{
+      color: #fff;
+  }
+  #intro{
+      background: url(images/bg.jpg);
   }
 
 
