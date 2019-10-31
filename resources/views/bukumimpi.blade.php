@@ -3,6 +3,7 @@
 <section>
     <div class="container">
         <div class="row">
+            @include('partials2.sidemenu')
             <div class="col-md-12 col-lg-8">
                 <h3 class="mt-30"><b>Buku Mimpi</b></h3><hr />
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">

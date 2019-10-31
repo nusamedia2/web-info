@@ -3,7 +3,7 @@
 <section>
     <div class="container">
         <div class="row">
-
+                @include('partials2.sidemenu')
             <div class="col-md-12 col-lg-8">
                 {{-- <img src="images/slider-1-1200x900.jpg" alt=""> --}}
                 <h3 class="mt-30"><b>Ketentuan Daftar</b></h3>

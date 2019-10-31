@@ -26,6 +26,7 @@
 			<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
 			<ul class="main-menu" id="main-menu">
+                <li><a href="/home">Home</a></li>
 				<li><a href="/cara-daftar">Cara Daftar</a></li>
 				<li class="drop-down"><a href="03_single-post.html">Tutorial VPN<i class="ion-arrow-down-b"></i></a>
 					<ul class="drop-down-menu drop-down-inner">

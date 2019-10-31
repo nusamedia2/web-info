@@ -3,6 +3,7 @@
 <section>
         <div class="container">
             <div class="row">
+                    @include('partials2.sidemenu')
                 <div class="col-md-12 col-lg-8">
                         <h4 class="mt-30"><b>Tampilan BET Live Number Indo Toto</b></h4>
                         <p class="mtb-30">1. Periode</p>

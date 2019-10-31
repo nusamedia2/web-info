@@ -3,6 +3,8 @@
 <section>
     <div class="container">
         <div class="row">
+            @include('partials2.sidemenu')
+            <div class="col-md-12 col-lg-8">
             <h3 class="mt-30"><b>BUKA KUNCI</b></h3>
 
             <p class="mtb-15">Cara mudah untuk dapat mengakses <a href="http://indototo.club"><b> www.indodota.club </b></a> tanpa terkena blok internet positif.
@@ -32,6 +34,7 @@
             <p class="mtb-15">Akses <a href="http://indototo.club">www.indototo.club</a> melalui buka kunci memang dijamin 100% BEBAS PHISING,
                 tetapi TIDAK MENJAMIN BEBAS KEYLOGGER, karena keylogger merupakan aplikasi yang langsung berada di komputer yang anda gunakan.
                 Untuk keamanan maksimal, sangat disarankan untuk menggunakan virtual keyboard saat memasukan password anda .</p>
+            </div>
         </div>
     </div>
 </section>

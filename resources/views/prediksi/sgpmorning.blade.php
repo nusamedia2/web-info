@@ -3,6 +3,7 @@
 <section>
         <div class="container">
             <div class="row">
+                    @include('partials2.sidemenu')
                 <div class="col-md-12 col-lg-8">
                     @foreach ($gambar_sgpmornings as $gh)
                     <h3 class="mt-30"><b>{{$gh->judul}}</b></h3>

@@ -48,6 +48,9 @@ Route::get('/prediksi', function () {
 Route::get('/buka-kunci', function(){
     return view('bukakunci');
 });
+Route::get('/home', function(){
+    return view('home');
+});
 
 //prediksi togel
 Route::get('/hongkong-dashboard', 'HongkongController@index');
