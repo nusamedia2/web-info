@@ -1,5 +1,6 @@
 @extends('apps.layout2')
 @section('content')
+<section>
     <div class="container">
              <div class="row">
                     @include('partials2.sidemenu')

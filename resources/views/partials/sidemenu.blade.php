@@ -55,6 +55,11 @@
             <i class="fa fa-book" aria-hidden="true"></i> <span>Buku Mimpi</span>
         </a>
       </li>
+      <li>
+        <a href="/promo-dashboard">
+            <i class="fa fa-usd" aria-hidden="true"></i> <span>Promo</span>
+        </a>
+      </li>
     </ul>
   </section>
   <!-- /.sidebar -->

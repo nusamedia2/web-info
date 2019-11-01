@@ -51,7 +51,7 @@ class SingaporeController extends Controller
 
         GambarSingapore::create([
             'judul' => $request->judul,
-            'keterangan' => $request->keterangan,
+            'keterangan' => nl2br($request->keterangan),
             'file' => $nama_file
         ]);
         return redirect('/singapore-dashboard');

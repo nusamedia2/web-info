@@ -22,7 +22,7 @@
                                 @foreach($buku_mimpis as $bm)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
-                                    <td>{{$bm->keterangan}}</td>
+                                    <td>{!!$bm->keterangan!!}</td>
                                     <td>{{$bm->jenis_game}}</td>
                                     <td>{{$bm->nomor}}</td>
                                 </tr>

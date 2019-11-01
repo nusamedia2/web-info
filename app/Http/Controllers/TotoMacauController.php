@@ -51,7 +51,7 @@ class TotoMacauController extends Controller
 
         GambarTotoMacau::create([
             'judul' => $request->judul,
-            'keterangan' => $request->keterangan,
+            'keterangan' => nl2br($request->keterangan),
             'file' => $nama_file
         ]);
         return redirect('/toto-macau-dashboard');

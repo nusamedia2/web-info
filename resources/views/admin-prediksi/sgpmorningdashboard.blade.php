@@ -29,7 +29,7 @@
              <tr>
                      <td>{{$loop->iteration}}</td>
                      <td>{{$gj->judul}}</td>
-                     <td>{{$gj->keterangan}}</td>
+                     <td>{!!$gj->keterangan!!}</td>
                      <td><img width="150px" src="{{ url('/data_file/'.$gj->file) }}"></td>
                      <td>
                        <a class="btn btn-danger" href="/deletedatasgpmorning/{{ $gj->id }}">Delete</a>

@@ -29,7 +29,7 @@
              <tr>
                      <td>{{$loop->iteration}}</td>
                      <td>{{$gm->judul}}</td>
-                     <td>{{$gm->keterangan}}</td>
+                     <td>{!!$gm->keterangan!!}</td>
                      <td><img width="150px" src="{{ url('/data_file/'.$gm->file) }}"></td>
                      <td>
                        <a class="btn btn-danger" href="/deletedatahongkong/{{ $gm->id }}">Delete</a>

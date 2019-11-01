@@ -157,6 +157,13 @@ Route::post('/bukumimpi/store', 'BukuMimpiController@store');
 Route::get('/deletedatabukumimpi/{id}', 'BukuMimpiController@destroy');
 Route::get('/buku-mimpi', 'BukuMimpiController@index2');
 
+//Promo
+Route::get('/promo-dashboard', 'PromoController@index');
+Route::get('/promo-add', 'PromoController@create');
+Route::post('/promo/store', 'PromoController@store');
+Route::get('/deletedatapromo/{id}', 'PromoController@destroy');
+Route::get('/promo', 'PromoController@index2');
+
 //mobile version
 Route::get('/tampilan-awal', function(){
     return view('mobileversion.tampilanawal');
@@ -184,4 +191,60 @@ Route::get('/live-chat', function(){
 });
 Route::get('/tampilan-bet', function(){
     return view('tampilanbet');
+});
+
+//Panduan Bermain
+Route::get('/no-keluar', function(){
+    return view('carabermain.nokeluar');
+});
+Route::get('/4d-3d-2d', function(){
+    return view('carabermain.4d3d2d');
+});
+Route::get('/colok-bebas', function(){
+    return view('carabermain.colokbebas');
+});
+Route::get('/colok-bebas-2d', function(){
+    return view('carabermain.colokbebas2d');
+});
+Route::get('/colok-naga', function(){
+    return view('carabermain.coloknaga');
+});
+Route::get('/colok-jitu', function(){
+    return view('carabermain.colokjitu');
+});
+Route::get('/tengah-tepi', function(){
+    return view('carabermain.tengahtepi');
+});
+Route::get('/kombinasi', function(){
+    return view('carabermain.kombinasi');
+});
+Route::get('/dasar', function(){
+    return view('carabermain.dasar');
+});
+Route::get('/50-50', function(){
+    return view('carabermain.5050');
+});
+Route::get('/shio', function(){
+    return view('carabermain.shio');
+});
+Route::get('/silang', function(){
+    return view('carabermain.silang');
+});
+Route::get('/kembang-kempis', function(){
+    return view('carabermain.kembangkempis');
+});
+Route::get('/24d-games', function(){
+    return view('carabermain.24dgames');
+});
+Route::get('/roulette', function(){
+    return view('carabermain.roulette');
+});
+Route::get('/sicbo', function(){
+    return view('carabermain.sicbo');
+});
+Route::get('/12d-games', function(){
+    return view('carabermain.12dgames');
+});
+Route::get('/dragon-tiger', function(){
+    return view('carabermain.dragontiger');
 });

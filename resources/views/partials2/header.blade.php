@@ -38,7 +38,7 @@
                 <li><a href="/hasil">Hasil</a></li>
                 <li><a href="/refferal">Referral</a></li>
                 <li><a href="/buku-mimpi">Buku Mimpi</a></li>
-                <li><a href="#">Promo</a></li>
+                <li><a href="/promo">Promo</a></li>
                 <li><a href="/prediksi">Prediksi Togel</a></li>
                 <li class="drop-down"><a href="#">Sosial Media<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
@@ -51,7 +51,7 @@
                 <li class="drop-down"><a href="#">Panduan<i class="ion-arrow-down-b"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
                         <li><a href="/tampilan-bet">Tampilan Bet Live Number</a></li>
-                        <li><a href="#">Panduan Bermain</a></li>
+                        <li><a href="/no-keluar">Panduan Bermain</a></li>
                         <li><a href="/tampilan-awal">Mobile Version</a></li>
                         <li><a href="/lupa-password">Lupa Password</a></li>
                         <li><a href="/buka-kunci">Buka Kunci</a></li>

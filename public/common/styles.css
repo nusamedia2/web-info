@@ -2039,6 +2039,9 @@ hr{
     width: 180%;
     font-size: 10px;
 }
-
+.kotak{
+    background-color: skyblue;
+    border-radius: 10px;
+}
 
 

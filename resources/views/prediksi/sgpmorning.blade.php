@@ -10,7 +10,7 @@
 
                     <img width="600px" src="{{ url('/data_file/'.$gh->file) }}" >
 
-                    <p class="mtb-15">{{$gh->keterangan}}</p>
+                    <p class="mtb-15">{!!$gh->keterangan!!}</p>
                     @endforeach
                 </div>
             </div>
